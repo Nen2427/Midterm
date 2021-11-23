@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='stylesheet.css') }}">
     <title>Registration</title>
 </head>
-<body>
-    <div class ="overlay">
+<body style="background-color: #15bb41;"">
+    <div class ="overlay>
         <header class = "head-form">
             <h1>Register</h1>
             <!--Welcome message for the user-->
         </header>
         <form action="/registration" methods="POST">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname"><br>
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname"><br>
-            <label for="username">UserName</label>
-            <input type="text" id="username" name="username"><br>
-            <label for="password">Password</label>
-            <input type="text" id="password" name="password"><br>
-            <button type="submit" id="register" name="register">Register</button>
-            <button type="button" onclick="location.href='/'">Back</button>
+            <label for="firstname" style="background-color: greenyellow;">First Name</label>
+            <input type="text" id="firstname" name="firstname" style="background-color: lawngreen;"><br>
+            <label for="lastname" style="background-color: greenyellow;">Last Name</label>
+            <input type="text" id="lastname" name="lastname" style="background-color: lawngreen;"><br>
+            <label for="username" style="background-color: greenyellow;">UserName</label>
+            <input type="text" id="username" name="username "style="background-color: lawngreen;"><br>
+            <label for="password" style="background-color: greenyellow;">Password</label>
+            <input type="text" id="password" name="password" style="background-color: greenyellow;"><br>
+            <button type="submit" id="register" name="register" style="background-color: greenyellow;">Register</button>
+            <button type="button" onclick="location.href='/'" style="background-color: lawngreen;">Back</button>
         </form>
     </div>
 </body>
