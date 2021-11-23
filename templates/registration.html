@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='stylesheet.css') }}">
+    <title>Registration</title>
+</head>
+<body>
+    <div class ="overlay">
+        <header class = "head-form">
+            <h1>Register</h1>
+            <!--Welcome message for the user-->
+        </header>
+        <form action="/registration" methods="POST">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname"><br>
+            <label for="username">UserName</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password"><br>
+            <button type="submit" id="register" name="register">Register</button>
+            <button type="button" onclick="location.href='/'">Back</button>
+        </form>
+    </div>
+</body>
+</html>
